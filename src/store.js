@@ -2,7 +2,7 @@ import Vue from "vue";
 import Vuex from "vuex";
 
 Vue.use(Vuex);
-//写点注释
+
 const store = new Vuex.Store({
 	modules: {
 		qm: {
