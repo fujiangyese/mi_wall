@@ -4,6 +4,7 @@
       <button @click="add()">+++++</button>
       {{this.$store.state.myNum}}
       <button @click="del()">-----</button>
+      <button @click="dispatchAdd">dispatch</button>
   </div>
 </template>
 
@@ -17,10 +18,13 @@ export default {
     },
     methods:{
         add(){
-            this.$store.commit('addNumber')
+            this.$store.commit('addNumber',{num:10})
         },
         del(){
             this.$store.commit('delNumber')
+        },
+        dispatchAdd(){
+            this.$store.dispatch('asyncAdd',{num:100})
         }
     },
     mounted(){

@@ -8,8 +8,8 @@ const store = new Vuex.Store({
         myNum:0
     },
 	mutations: {
-        addNumber(state){
-            state.myNum++
+        addNumber(state,params){
+            state.myNum = state.myNum+params.num
         },
         delNumber(state){
             state.myNum--
@@ -17,9 +17,10 @@ const store = new Vuex.Store({
     },
 	actions: {
         //异步调用
-        // asyncAdd(context){
-
-        // }
+        asyncAdd(context,params){
+            
+            setTimeout(()=>{context.commit('addNumber',params)},1000)
+        }
     },
 });
 export default store
