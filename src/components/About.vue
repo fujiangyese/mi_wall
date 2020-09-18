@@ -2,7 +2,7 @@
   <div>
       <h1>{{msg}}</h1>
       <button @click="add()">+++++</button>
-      {{this.$store.state.myNum}}
+      {{this.$store.state.qm.myNum}}
       <button @click="del()">-----</button>
       <button @click="dispatchAdd">dispatch</button>
   </div>
@@ -29,7 +29,7 @@ export default {
     },
     mounted(){
         console.log(this)
-        console.log(this.$store.state)
+        console.log(this.$store.state.qm)
     }
 }
 </script>
