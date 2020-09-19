@@ -1,7 +1,9 @@
 <template>
-  <div id="app">
-    <h1>{{msg}}</h1>
-    <router-view></router-view>
+  <div>
+    <!-- <h1>{{msg}}</h1>
+    <router-view></router-view> -->
+    app
+    <input type="button">
   </div>
 </template>
 
@@ -12,7 +14,7 @@ export default {
   },
   data(){
     return {
-      msg:'来自主视图的数据'
+      // msg:'来自主视图的数据'
     }
   },
   methods: {
