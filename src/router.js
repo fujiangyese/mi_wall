@@ -14,6 +14,21 @@ const routes = [
 		path:'/discovery',
 		name:'discovery',
 		component:()=> import('./components/discovery.vue')
+	},
+	{
+		path:'/tuijian',
+		name:'tuijian',
+		component:()=> import('./components/tuijian.vue')
+	},
+	{
+		path:'/music',
+		name:'music',
+		component:()=> import('./components/music.vue')
+	},
+	{
+		path:'/mv',
+		name:'mv',
+		component:()=> import('./components/mv.vue')
 	}
 ];
 

@@ -14,10 +14,10 @@ export default {
 	data() {
 		return {
 			item_list: [
-				{ name: "发现音乐", path: "/" ,icon:'图标'},
-				{ name: "推荐歌单", path: "/" },
-				{ name: "最新音乐", path: "/" },
-				{ name: "最新MV", path: "/" },
+				{ name: "发现音乐", path: "/discovery" ,icon:'图标'},
+				{ name: "推荐歌单", path: "/tuijian" },
+				{ name: "最新音乐", path: "/music" },
+				{ name: "最新MV", path: "/mv" },
 			],
 		};
 	},
