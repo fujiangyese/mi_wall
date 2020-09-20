@@ -1,34 +1,44 @@
 <template>
-  <div>
-    <!-- <h1>{{msg}}</h1>
-    <router-view></router-view> -->
-    app
-    <input type="button">
+	<div>
+    <top class="top"></top>
+    <index class="index"></index>
   </div>
 </template>
 
 <script>
-
+import top from './components/01.top.vue'
+import index from './components/02.index.vue'
 export default {
-  components: {
+	components: {
+    top,
+		index
   },
-  data(){
-    return {
-      // msg:'来自主视图的数据'
-    }
-  },
-  methods: {
-  },
+	data() {
+		return {
+			// msg:'来自主视图的数据'
+		};
+	},
+	methods: {},
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+*{
+  margin: 0;
+  padding: 0;
+
 }
+.top {
+  /* 开启弹性布局 */
+  display: flex;
+  align-items: center;
+  color: #f9f9f9;
+}
+input{
+  height: 50px;
+  width: 350px;
+  /* border: none; */
+}
+
+
 </style>
