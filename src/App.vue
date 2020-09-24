@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <h1>{{msg}}</h1>
-    <router-view></router-view>
+    <h1>这是主页面</h1>
   </div>
 </template>
 
@@ -12,7 +11,6 @@ export default {
   },
   data(){
     return {
-      msg:'来自主视图的数据'
     }
   },
   methods: {
