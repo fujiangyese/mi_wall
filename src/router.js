@@ -9,27 +9,33 @@ const routes = [
 	// 	path: "/about",
 	// 	name: "About",
 	// 	component:About
-    // },
-    {
-		path:'/discovery',
-		name:'discovery',
-		component:()=> import('./components/discovery.vue')
+	// },
+	{ path: "/", component: () => import("./components/discovery.vue") },
+	{
+		path: "/discovery",
+		name: "discovery",
+		component: () => import("./components/discovery.vue"),
 	},
 	{
-		path:'/tuijian',
-		name:'tuijian',
-		component:()=> import('./components/tuijian.vue')
+		path: "/playlists",
+		name: "playlists",
+		component: () => import("./components/playlists.vue"),
 	},
 	{
-		path:'/music',
-		name:'music',
-		component:()=> import('./components/music.vue')
+		path: "/songs",
+		name: "songs",
+		component: () => import("./components/songs.vue"),
 	},
 	{
-		path:'/mv',
-		name:'mv',
-		component:()=> import('./components/mv.vue')
-	}
+		path: "/mvs",
+		name: "mvs",
+		component: () => import("./components/mvs.vue"),
+	},
+	{
+		path: "/search",
+		name: "search",
+		component: () => import("./components/search.vue"),
+	},
 ];
 
 const router = new VueRouter({

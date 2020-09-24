@@ -2,7 +2,10 @@
 	<div>
 		<top class="top"></top>
 		<index class="index"></index>
-		<div class="player"><audio src="" autoplay controls id="music"></audio></div>
+		<!-- 播放标签 -->
+		<div class="player">
+			<audio src="" autoplay controls id="music"></audio>
+		</div>
 	</div>
 </template>
 
@@ -10,6 +13,7 @@
 import top from "./components/01.top.vue";
 import index from "./components/02.index.vue";
 export default {
+	name:'app',
 	components: {
 		top,
 		index,
@@ -38,8 +42,5 @@ input {
 	height: 50px;
 	width: 350px;
 	/* border: none; */
-}
-.player {
-  width: 100%;
 }
 </style>
